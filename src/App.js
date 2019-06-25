@@ -14,7 +14,7 @@ const ALL_PEOPLE = gql`
 class Trigger extends React.Component {
   componentDidMount() {
     const { update } = this.props;
-    window.setTimeout(update, 3000);
+    window.setTimeout(update, 5000);
   }
 
   render() {
@@ -51,10 +51,12 @@ class App extends React.Component {
         <Query query={ALL_PEOPLE}>
           {({ loading, data, error }) => (
             <>
+              <h3>Loading: </h3>
               <pre>{JSON.stringify(loading)}</pre>
-              <br />
+              <h3>Data: </h3>
               <pre>{JSON.stringify(data)}</pre>
               <br />
+              <h3>Error:</h3>
               <pre>{JSON.stringify(error)}</pre>
               <Trigger update={this.triggerUpdate} />
             </>
