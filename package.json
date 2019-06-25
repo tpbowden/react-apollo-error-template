@@ -6,6 +6,7 @@
     "gh-pages": "^2.0.1",
     "react-scripts": "2.1.8"
   },
+  "homepage": "https://tpbowden.github.io/react-apollo-error-template",
   "dependencies": {
     "apollo-cache-inmemory": "^1.5.1",
     "apollo-client": "^2.6.3",
